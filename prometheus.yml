@@ -28,3 +28,8 @@ scrape_configs:
       - "10.1.2.210:9182"
       - "10.1.2.221:9182"
       - "10.1.144.59:9182"
+  - job_name: "node_net2"
+    scrape_interval: "15s"
+    static_configs:
+    - targets:
+      - "10.1.144.59:9182"
